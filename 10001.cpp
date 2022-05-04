@@ -7,7 +7,8 @@ struct node{
   int b,e,t;
 };
 bool operator < (const node & a,const node & b){
-  return (a.b<b.b)||(a.b==b.b&&a.e<=b.e);
+//  return (a.b<b.b)||(a.b==b.b&&a.e<=b.e);
+	return (a.e<b.e);
 }
 
 node seg[30001];
